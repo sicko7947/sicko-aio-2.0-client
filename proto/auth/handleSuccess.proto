@@ -1,0 +1,40 @@
+syntax = "proto3";
+package protobuf;
+option go_package = "auth;auth_service";
+
+message SuccessProduct {
+    string merchGroup = 1;
+    string ProductSku = 2;
+    string productName = 3;
+    string productDescription = 4;
+    string size = 5;
+    string price = 6;
+    int64 quantity = 7;
+    string orderNumber = 8;
+    string profileName = 9;
+    string email = 10;
+    string account = 11;
+    string giftCards = 12;
+    string discountCode = 13;
+    string imageUrl = 14;
+    string redirectUrl = 15;
+}
+
+message SuccessSetup {
+    string timestamp = 1;
+    string taskType = 2;
+    string category = 3;
+    string monitorMode = 4;
+    string region = 5;
+    bool usePsychoCookie = 6;
+}
+
+message StreamHandleSuccessCheckoutRequest{
+    string keyId = 1;
+    SuccessSetup setup = 2;
+    SuccessProduct product = 3;
+}
+
+message StreamHandleSuccessCheckoutResponse{
+    bool success = 1;
+}

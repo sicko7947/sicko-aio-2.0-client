@@ -1,0 +1,24 @@
+syntax = "proto3";
+package protobuf;
+option go_package = "auth;auth_service";
+
+message StreamRetrieveSuccessItemsRequest {
+    string keyId = 1;
+}
+
+message StreamRetrieveSuccessItemsResponse {
+    message SuccessItem {
+        string category = 1;
+        string region = 2;
+        string productSku = 3;
+        string productName = 4;
+        string orderNumber = 5;
+        string email = 6;
+        string size = 7;
+        string timestamp = 8;
+        string redirectUrl = 9;
+        string imageUrl = 10;
+    }
+
+    repeated SuccessItem successItems = 1;
+}

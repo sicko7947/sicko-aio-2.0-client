@@ -1,0 +1,20 @@
+syntax = "proto3";
+package protobuf;
+
+option go_package = "auth;auth_service";
+import "auth/cookie.proto";
+import "auth/auth.proto";
+import "auth/handleSuccess.proto";
+import "auth/retrieveSuccess.proto";
+
+
+service AuthStream{
+    rpc Auth(stream StreamAuthRequest) returns(stream StreamAuthResponse){};
+    rpc Deactivate(stream StreamDeactivateRequest) returns(stream StreamDeactivateResponse){};
+    rpc Polling(stream StreamPollingRequest) returns(stream StreamPollingResponse){};
+    rpc RequestCookieData(stream StreamGetCookieDataRequest) returns(stream StreamGetCookieDataResponse){};
+
+    rpc HandleSuccessCheckout(stream StreamHandleSuccessCheckoutRequest) returns(stream StreamHandleSuccessCheckoutResponse){};
+    rpc RetrieveSuccess(stream StreamRetrieveSuccessItemsRequest) returns(stream StreamRetrieveSuccessItemsResponse){};
+
+}

@@ -1,0 +1,10 @@
+syntax = "proto3";
+package protobuf;
+option go_package = "auth;auth_service";
+
+message StreamGetCookieDataRequest{
+}
+
+message StreamGetCookieDataResponse{
+    string data = 1;
+}

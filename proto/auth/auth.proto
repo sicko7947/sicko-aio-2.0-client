@@ -1,0 +1,41 @@
+syntax = "proto3";
+package protobuf;
+option go_package = "auth;auth_service";
+
+
+message StreamAuthRequest{
+    string key = 1;
+    string ipaddress = 2;
+    string cpuId =3;
+    string timestamp = 4;
+}
+
+
+message StreamAuthResponse {
+    int64 code = 1;
+    string message = 2;
+}
+
+message StreamDeactivateRequest{
+    string key = 1;
+    string ipaddress = 2;
+    string cpuId =3;
+    string timestamp = 4;
+}
+
+message StreamDeactivateResponse{
+    int64 code = 1;
+    string message = 2;
+}
+
+message StreamPollingRequest{
+    string key = 1;
+    string ipaddress = 2;
+    string cpuId =3;
+    string timestamp = 4;
+}
+
+message StreamPollingResponse {
+    int64 code = 1;
+    string message = 2;
+}
