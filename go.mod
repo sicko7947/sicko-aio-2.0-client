@@ -7,11 +7,9 @@ require (
 	github.com/PuerkitoBio/goquery v1.7.1
 	github.com/ashwanthkumar/slack-go-webhook v0.0.0-20200209025033-430dd4e66960
 	github.com/brianvoe/gofakeit/v6 v6.6.0
-	github.com/dop251/goja v0.0.0-20211207134806-acd374ca9c94
 	github.com/elazarl/goproxy v0.0.0-20210110162100-a92cc753f88e // indirect
 	github.com/fsnotify/fsnotify v1.5.1 // indirect
 	github.com/garyburd/redigo v1.6.2
-	github.com/gbrlsnchs/jwt/v3 v3.0.0
 	github.com/go-redis/redis/v7 v7.4.1 // indirect
 	github.com/go-toast/toast v0.0.0-20190211030409-01e6764cf0a4
 	github.com/gogf/gf v1.16.6
@@ -22,10 +20,9 @@ require (
 	github.com/hibiken/asynq v0.18.2
 	github.com/hibiken/asynq/tools v0.0.0-20210803032009-95c90a5cb822
 	github.com/huandu/go-clone v1.2.1
-	github.com/magefile/mage v1.11.0 // indirect
+	github.com/kr/text v0.2.0 // indirect
 	github.com/mattn/go-isatty v0.0.13 // indirect
 	github.com/mattn/go-runewidth v0.0.13 // indirect
-	github.com/mxschmitt/playwright-go v0.1100.0
 	github.com/nu7hatch/gouuid v0.0.0-20131221200532-179d4d0c4d8d // indirect
 	github.com/onsi/ginkgo v1.16.1 // indirect
 	github.com/onsi/gomega v1.11.0 // indirect
@@ -40,17 +37,15 @@ require (
 	github.com/spf13/cobra v1.2.1 // indirect
 	github.com/tidwall/gjson v1.8.1
 	github.com/tidwall/pretty v1.2.0 // indirect
-	github.com/tidwall/sjson v1.1.7
 	github.com/withmandala/go-log v0.1.0
 	github.com/zMrKrabz/fhttp v0.0.0-20210613003958-8bc8ff4739bb
 	go.opentelemetry.io/otel v1.0.0-RC3 // indirect
-	golang.org/x/crypto v0.0.0-20210921155107-089bfa567519 // indirect
-	golang.org/x/net v0.0.0-20211014222326-fd004c51d1d6
-	golang.org/x/sys v0.0.0-20211013075003-97ac67df715c // indirect
-	golang.org/x/term v0.0.0-20210422114643-f5beecf764ed // indirect
+	golang.org/x/crypto v0.35.0 // indirect
+	golang.org/x/net v0.25.0
 	golang.org/x/time v0.0.0-20210723032227-1f47c861a9ac // indirect
 	google.golang.org/genproto v0.0.0-20210803142424-70bd63adacf2 // indirect
 	google.golang.org/grpc v1.39.0
 	google.golang.org/protobuf v1.27.1
+	gopkg.in/check.v1 v1.0.0-20201130134442-10cb98267c6c // indirect
 	moul.io/http2curl v1.0.0 // indirect
 )
